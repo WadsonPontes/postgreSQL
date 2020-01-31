@@ -18,10 +18,10 @@ class Conexao {
 
 	private function conectar() {
 		$this->CONEXAO = pg_connect("host=".    $this->SERVIDOR
-                                  ." port=".    $this->PORTA
-                                  ." dbname=".  $this->BANCO
-                                  ." user=".    $this->USUARIO
-                                  ." password=".$this->SENHA);
+                                          ." port=".    $this->PORTA
+                                          ." dbname=".  $this->BANCO
+                                          ." user=".    $this->USUARIO
+                                          ." password=".$this->SENHA);
 	}
 
 	public function desconectar() {
