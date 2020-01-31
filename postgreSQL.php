@@ -61,6 +61,4 @@ class Conexao {
     		return "$valor";
 	}
 }
-
-main();
 ?>
