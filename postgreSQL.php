@@ -41,10 +41,10 @@ class Conexao {
 
 		foreach ($valores as $valor) {
 			$sql .= $this->aspas($valor).",";
-    	}
-    	$sql[-1] = ")";
+		}
+		$sql[-1] = ")";
 
-    	pg_query($this->CONEXAO, $sql);
+		pg_query($this->CONEXAO, $sql);
 	}
 
 	public function apagar($tabela, $condicao) {
@@ -56,9 +56,9 @@ class Conexao {
 			return "default";
 		}
 		else if (gettype($valor) === "string")
-    		return "'$valor'";
-    	else
-    		return "$valor";
+			return "'$valor'";
+		else
+			return "$valor";
 	}
 }
 ?>
